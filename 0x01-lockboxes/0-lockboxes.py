@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
 def canUnlockAll(boxes):
+    """
+    The can Unlock function
+    """
     n = len(boxes)
     unlocked = set()
     stack = [0]  # Start with the first box
