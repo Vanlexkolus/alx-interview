@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+This is the beginning of this poject
+This is to help the checker
+"""
+
+
 def minOperations(n):
     """
     Calculates the fewest number of operations needed
