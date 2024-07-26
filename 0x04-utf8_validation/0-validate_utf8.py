@@ -16,12 +16,11 @@ def validUTF8(data):
         bool: True if data is a valid UTF-8 encoding, else False.
     """
 
-
     num_bytes = 0
 
     for num in data:
         byte = num & 0xFF  # Only consider the last 8 bits
-        
+
         if num_bytes == 0:
             if byte >> 7 == 0:
                 continue
