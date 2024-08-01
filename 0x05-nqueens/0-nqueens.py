@@ -21,6 +21,7 @@ def print_solutions(solutions):
     for solution in solutions:
         print(solution)
 
+
 def is_valid(board, row, col):
     """
     Check if placing a queen at(row, col) is valid.
@@ -42,6 +43,7 @@ def is_valid(board, row, col):
                 board[i] + i == col + row):
             return False
     return True
+
 
 def solve_nqueens(n):
     """
@@ -77,6 +79,7 @@ def solve_nqueens(n):
     backtrack(0, board)
     return solutions
 
+
 def main():
     """
     Main function to handle input, validate it,
@@ -98,6 +101,7 @@ def main():
 
     solutions = solve_nqueens(n)
     print_solutions(solutions)
+
 
 if __name__ == "__main__":
     main()
