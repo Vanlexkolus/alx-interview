@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+This is a change making method
+"""
+
+
 def makeChange(coins, total):
     # If the total is 0, no coins are needed
     if total <= 0:
