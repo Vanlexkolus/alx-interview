@@ -6,25 +6,14 @@ Island Perimeter:
 
 
 def island_perimeter(grid):
+    """island perimenter function"""
     perimeter = 0
-
-    # Get the dimensions of the grid
-    rows = len(grid)
-    cols = len(grid[0])
-
-    # Loop through the grid
-    for i in range(rows):
-        for j in range(cols):
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
             if grid[i][j] == 1:
-                # Add 4 for a land cell
                 perimeter += 4
-
-                # Check if there's a land cell to the left
-                if j > 0 and grid[i][j - 1] == 1:
-                    perimeter -= 2  # They share a border, reduce by 2
-
-                # Check if there's a land cell above
-                if i > 0 and grid[i - 1][j] == 1:
-                    perimeter -= 2  # They share a border, reduce by 2
-
+                if i > 0 and grid[i-1][j] == 1:
+                    perimeter -= 2
+                if j > 0 and grid[i][j-1] == 1:
+                    perimeter -= 2
     return perimeter
